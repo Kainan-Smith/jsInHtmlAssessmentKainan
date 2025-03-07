@@ -4,10 +4,17 @@
     <title>Button with onclick Event</title>
 </head>
 <body>
-
     <!-- Create a button that, when clicked, displays an alert 
      saying "Button clicked!" Use a function to handle the click event. -->
 
-    
+    <script>
+        var newButton = document.getElementById("newButton");
+        newButton.innerHTML("Button");
+        newButton.setAttribute(onclick, buttonEvent());
+
+        function buttonEvent() {
+            alert("Button clicked!");
+        }
+    </script>
 </body>
 </html>

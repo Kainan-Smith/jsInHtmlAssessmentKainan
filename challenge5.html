@@ -4,9 +4,13 @@
     <title>Styling Elements Using setAttribute and Dot Notation</title>
 </head>
 <body>
-
     <!-- Create a <div> element with a blue background and white 
         text using both setAttribute and dot notation. -->
-        
+    <script>
+        var blueDiv = document.createElement("div");
+        blueDiv.innerHTML = "Beeb";
+        blueDiv.setAttribute("style", "color: white;");
+        blueDiv.style.backgroundColor = "blue";
+    </script>
 </body>
 </html>
